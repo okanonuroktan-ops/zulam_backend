@@ -1,0 +1,2786 @@
+{
+  "success": true,
+  "lastUpdate": "24.04.2026 02:48:07",
+  "data": {
+    "bySource": {
+      "Kapalıçarşı": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "44,9100",
+          "sellPrice": "44,9200",
+          "spreadAmount": "0,01",
+          "spreadPercent": "%0,02",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "52,4500",
+          "sellPrice": "52,5000",
+          "spreadAmount": "0,05",
+          "spreadPercent": "%0,10",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "6.838,06",
+          "sellPrice": "6.844,09",
+          "spreadAmount": "6,03",
+          "spreadPercent": "%0,09",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Altınkaynak": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "44,8450",
+          "sellPrice": "45,0060",
+          "spreadAmount": "0,16",
+          "spreadPercent": "%0,36",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "52,3050",
+          "sellPrice": "52,5820",
+          "spreadAmount": "0,28",
+          "spreadPercent": "%0,53",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "6.724,03",
+          "sellPrice": "6.980,00",
+          "spreadAmount": "255,97",
+          "spreadPercent": "%3,81",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Harem": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Harem",
+          "buyPrice": "44,8761",
+          "sellPrice": "45,0459",
+          "spreadAmount": "0,17",
+          "spreadPercent": "%0,38",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Harem",
+          "buyPrice": "52,3421",
+          "sellPrice": "52,6564",
+          "spreadAmount": "0,31",
+          "spreadPercent": "%0,60",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Harem",
+          "buyPrice": "6.759,76",
+          "sellPrice": "6.861,54",
+          "spreadAmount": "101,78",
+          "spreadPercent": "%1,51",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Harem",
+          "buyPrice": "106,31",
+          "sellPrice": "111,85",
+          "spreadAmount": "5,54",
+          "spreadPercent": "%5,21",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Odacı": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Odacı",
+          "buyPrice": "44,8740",
+          "sellPrice": "45,0770",
+          "spreadAmount": "0,20",
+          "spreadPercent": "%0,45",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Odacı",
+          "buyPrice": "52,3160",
+          "sellPrice": "52,6980",
+          "spreadAmount": "0,38",
+          "spreadPercent": "%0,73",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Odacı",
+          "buyPrice": "6.780,00",
+          "sellPrice": "6.824,00",
+          "spreadAmount": "44,00",
+          "spreadPercent": "%0,66",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Venüs": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Venüs",
+          "buyPrice": "44,9040",
+          "sellPrice": "45,0140",
+          "spreadAmount": "0,11",
+          "spreadPercent": "%0,24",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Venüs",
+          "buyPrice": "52,3910",
+          "sellPrice": "52,6350",
+          "spreadAmount": "0,24",
+          "spreadPercent": "%0,45",
+          "category": "Döviz"
+        }
+      ],
+      "Getirfinans": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Getirfinans",
+          "buyPrice": "44,5426",
+          "sellPrice": "45,2415",
+          "spreadAmount": "0,70",
+          "spreadPercent": "%1,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Getirfinans",
+          "buyPrice": "52,0541",
+          "sellPrice": "52,8239",
+          "spreadAmount": "0,77",
+          "spreadPercent": "%1,48",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Getirfinans",
+          "buyPrice": "6.738,27",
+          "sellPrice": "6.806,73",
+          "spreadAmount": "68,46",
+          "spreadPercent": "%1,02",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Getirfinans",
+          "buyPrice": "108,66",
+          "sellPrice": "110,93",
+          "spreadAmount": "2,27",
+          "spreadPercent": "%2,10",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Akbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Akbank",
+          "buyPrice": "43,4730",
+          "sellPrice": "46,4730",
+          "spreadAmount": "3,00",
+          "spreadPercent": "%6,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Akbank",
+          "buyPrice": "50,7943",
+          "sellPrice": "54,2995",
+          "spreadAmount": "3,51",
+          "spreadPercent": "%6,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Akbank",
+          "buyPrice": "6.550,73",
+          "sellPrice": "7.379,17",
+          "spreadAmount": "828,44",
+          "spreadPercent": "%12,65",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Akbank",
+          "buyPrice": "104,49",
+          "sellPrice": "124,03",
+          "spreadAmount": "19,54",
+          "spreadPercent": "%18,69",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Albaraka Türk": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "43,7650",
+          "sellPrice": "46,1750",
+          "spreadAmount": "2,41",
+          "spreadPercent": "%5,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "51,1300",
+          "sellPrice": "53,9560",
+          "spreadAmount": "2,83",
+          "spreadPercent": "%5,53",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "6.561,08",
+          "sellPrice": "6.952,50",
+          "spreadAmount": "391,42",
+          "spreadPercent": "%5,97",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "105,60",
+          "sellPrice": "113,86",
+          "spreadAmount": "8,26",
+          "spreadPercent": "%7,81",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Alternatif Bank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "42,7990",
+          "sellPrice": "46,8010",
+          "spreadAmount": "4,00",
+          "spreadPercent": "%9,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "50,0650",
+          "sellPrice": "54,9180",
+          "spreadAmount": "4,85",
+          "spreadPercent": "%9,69",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "6.530,10",
+          "sellPrice": "7.196,61",
+          "spreadAmount": "666,51",
+          "spreadPercent": "%10,21",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Anadolubank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Anadolubank",
+          "buyPrice": "44,3121",
+          "sellPrice": "45,4973",
+          "spreadAmount": "1,19",
+          "spreadPercent": "%2,66",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Anadolubank",
+          "buyPrice": "51,3030",
+          "sellPrice": "53,8721",
+          "spreadAmount": "2,57",
+          "spreadPercent": "%4,99",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Anadolubank",
+          "buyPrice": "6.151,93",
+          "sellPrice": "7.378,99",
+          "spreadAmount": "1.227,06",
+          "spreadPercent": "%19,95",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Anadolubank",
+          "buyPrice": "93,26",
+          "sellPrice": "125,78",
+          "spreadAmount": "32,52",
+          "spreadPercent": "%34,86",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "CEPTETEB": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "42,9490",
+          "sellPrice": "46,8010",
+          "spreadAmount": "3,85",
+          "spreadPercent": "%8,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "50,4290",
+          "sellPrice": "54,9520",
+          "spreadAmount": "4,52",
+          "spreadPercent": "%8,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "5.633,57",
+          "sellPrice": "8.093,45",
+          "spreadAmount": "2.459,88",
+          "spreadPercent": "%43,66",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Denizbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Denizbank",
+          "buyPrice": "43,4122",
+          "sellPrice": "46,2123",
+          "spreadAmount": "2,80",
+          "spreadPercent": "%6,45",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Denizbank",
+          "buyPrice": "50,7159",
+          "sellPrice": "53,9871",
+          "spreadAmount": "3,27",
+          "spreadPercent": "%6,46",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Denizbank",
+          "buyPrice": "6.555,84",
+          "sellPrice": "6.980,27",
+          "spreadAmount": "424,43",
+          "spreadPercent": "%6,47",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Denizbank",
+          "buyPrice": "105,54",
+          "sellPrice": "112,42",
+          "spreadAmount": "6,88",
+          "spreadPercent": "%6,52",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "DestekBank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "DestekBank",
+          "buyPrice": "44,7583",
+          "sellPrice": "44,9100",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,34",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "DestekBank",
+          "buyPrice": "52,2768",
+          "sellPrice": "52,4737",
+          "spreadAmount": "0,20",
+          "spreadPercent": "%0,38",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "DestekBank",
+          "buyPrice": "6.711,73",
+          "sellPrice": "6.758,26",
+          "spreadAmount": "46,53",
+          "spreadPercent": "%0,69",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "DestekBank",
+          "buyPrice": "108,62",
+          "sellPrice": "109,45",
+          "spreadAmount": "0,83",
+          "spreadPercent": "%0,76",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Dünya Katılım": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "44,7716",
+          "sellPrice": "44,9243",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "52,2698",
+          "sellPrice": "52,4796",
+          "spreadAmount": "0,21",
+          "spreadPercent": "%0,41",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "6.715,28",
+          "sellPrice": "6.760,11",
+          "spreadAmount": "44,83",
+          "spreadPercent": "%0,67",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "108,59",
+          "sellPrice": "109,56",
+          "spreadAmount": "0,97",
+          "spreadPercent": "%0,89",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Emlak Katılım": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "44,0150",
+          "sellPrice": "46,2790",
+          "spreadAmount": "2,26",
+          "spreadPercent": "%5,14",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "51,2801",
+          "sellPrice": "54,1484",
+          "spreadAmount": "2,87",
+          "spreadPercent": "%5,59",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "5.709,09",
+          "sellPrice": "7.841,29",
+          "spreadAmount": "2.132,20",
+          "spreadPercent": "%37,35",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "93,05",
+          "sellPrice": "126,03",
+          "spreadAmount": "32,98",
+          "spreadPercent": "%35,45",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Enpara": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Enpara",
+          "buyPrice": "44,0750",
+          "sellPrice": "45,8750",
+          "spreadAmount": "1,80",
+          "spreadPercent": "%4,08",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Enpara",
+          "buyPrice": "51,2353",
+          "sellPrice": "53,8776",
+          "spreadAmount": "2,64",
+          "spreadPercent": "%5,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Enpara",
+          "buyPrice": "6.589,82",
+          "sellPrice": "7.042,01",
+          "spreadAmount": "452,19",
+          "spreadPercent": "%6,86",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Fibabanka": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Fibabanka",
+          "buyPrice": "44,5426",
+          "sellPrice": "45,2416",
+          "spreadAmount": "0,70",
+          "spreadPercent": "%1,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Fibabanka",
+          "buyPrice": "52,0536",
+          "sellPrice": "52,8235",
+          "spreadAmount": "0,77",
+          "spreadPercent": "%1,48",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Fibabanka",
+          "buyPrice": "6.736,09",
+          "sellPrice": "6.805,32",
+          "spreadAmount": "69,23",
+          "spreadPercent": "%1,03",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Fibabanka",
+          "buyPrice": "108,56",
+          "sellPrice": "110,84",
+          "spreadAmount": "2,28",
+          "spreadPercent": "%2,10",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Garanti BBVA": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "43,7820",
+          "sellPrice": "45,7820",
+          "spreadAmount": "2,00",
+          "spreadPercent": "%4,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "51,1530",
+          "sellPrice": "53,4890",
+          "spreadAmount": "2,34",
+          "spreadPercent": "%4,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "6.678,10",
+          "sellPrice": "7.147,13",
+          "spreadAmount": "469,03",
+          "spreadPercent": "%7,02",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "104,01",
+          "sellPrice": "115,38",
+          "spreadAmount": "11,37",
+          "spreadPercent": "%10,93",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "TOM Bank Hadi": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "44,7563",
+          "sellPrice": "45,4310",
+          "spreadAmount": "0,67",
+          "spreadPercent": "%1,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "52,2951",
+          "sellPrice": "53,0835",
+          "spreadAmount": "0,79",
+          "spreadPercent": "%1,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "6.706,23",
+          "sellPrice": "6.925,83",
+          "spreadAmount": "219,60",
+          "spreadPercent": "%3,27",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "109,40",
+          "sellPrice": "114,87",
+          "spreadAmount": "5,47",
+          "spreadPercent": "%5,00",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Halkbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Halkbank",
+          "buyPrice": "43,7448",
+          "sellPrice": "46,5948",
+          "spreadAmount": "2,85",
+          "spreadPercent": "%6,52",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Halkbank",
+          "buyPrice": "51,3170",
+          "sellPrice": "54,6603",
+          "spreadAmount": "3,34",
+          "spreadPercent": "%6,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Halkbank",
+          "buyPrice": "6.328,17",
+          "sellPrice": "7.636,60",
+          "spreadAmount": "1.308,43",
+          "spreadPercent": "%20,68",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Hayat Finans": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "44,3656",
+          "sellPrice": "45,4090",
+          "spreadAmount": "1,04",
+          "spreadPercent": "%2,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "51,4061",
+          "sellPrice": "53,1474",
+          "spreadAmount": "1,74",
+          "spreadPercent": "%3,39",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "6.636,20",
+          "sellPrice": "6.890,86",
+          "spreadAmount": "254,66",
+          "spreadPercent": "%3,84",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "HSBC": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "HSBC",
+          "buyPrice": "44,0419",
+          "sellPrice": "46,0671",
+          "spreadAmount": "2,03",
+          "spreadPercent": "%4,60",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "HSBC",
+          "buyPrice": "51,0434",
+          "sellPrice": "54,2744",
+          "spreadAmount": "3,23",
+          "spreadPercent": "%6,34",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "HSBC",
+          "buyPrice": "6.590,10",
+          "sellPrice": "7.900,71",
+          "spreadAmount": "1.310,61",
+          "spreadPercent": "%19,89",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "HSBC",
+          "buyPrice": "104,24",
+          "sellPrice": "143,63",
+          "spreadAmount": "39,39",
+          "spreadPercent": "%37,82",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "ING Bank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "ING Bank",
+          "buyPrice": "43,8777",
+          "sellPrice": "45,8954",
+          "spreadAmount": "2,02",
+          "spreadPercent": "%4,59",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "ING Bank",
+          "buyPrice": "51,2581",
+          "sellPrice": "53,5788",
+          "spreadAmount": "2,32",
+          "spreadPercent": "%4,52",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "ING Bank",
+          "buyPrice": "6.493,71",
+          "sellPrice": "7.052,91",
+          "spreadAmount": "559,20",
+          "spreadPercent": "%8,61",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "İş Bankası": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "İş Bankası",
+          "buyPrice": "43,7267",
+          "sellPrice": "46,2486",
+          "spreadAmount": "2,52",
+          "spreadPercent": "%5,77",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "İş Bankası",
+          "buyPrice": "51,0903",
+          "sellPrice": "54,0369",
+          "spreadAmount": "2,95",
+          "spreadPercent": "%5,77",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "İş Bankası",
+          "buyPrice": "6.358,59",
+          "sellPrice": "7.162,72",
+          "spreadAmount": "804,13",
+          "spreadPercent": "%12,65",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Kuveyt Türk": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "44,3503",
+          "sellPrice": "45,5202",
+          "spreadAmount": "1,17",
+          "spreadPercent": "%2,64",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "51,8098",
+          "sellPrice": "53,1981",
+          "spreadAmount": "1,39",
+          "spreadPercent": "%2,68",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "6.660,66",
+          "sellPrice": "6.873,21",
+          "spreadAmount": "212,55",
+          "spreadPercent": "%3,19",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "107,77",
+          "sellPrice": "111,22",
+          "spreadAmount": "3,45",
+          "spreadPercent": "%3,20",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Merkez Bankası": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Merkez Bankası",
+          "buyPrice": "44,8132",
+          "sellPrice": "44,8939",
+          "spreadAmount": "0,08",
+          "spreadPercent": "%0,18",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Merkez Bankası",
+          "buyPrice": "52,6499",
+          "sellPrice": "52,7447",
+          "spreadAmount": "0,09",
+          "spreadPercent": "%0,18",
+          "category": "Döviz"
+        }
+      ],
+      "Misyon Bank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "44,8108",
+          "sellPrice": "44,9510",
+          "spreadAmount": "0,14",
+          "spreadPercent": "%0,31",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "52,4047",
+          "sellPrice": "52,5539",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,28",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "6.711,65",
+          "sellPrice": "6.774,54",
+          "spreadAmount": "62,89",
+          "spreadPercent": "%0,94",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "108,52",
+          "sellPrice": "109,60",
+          "spreadAmount": "1,08",
+          "spreadPercent": "%1,00",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Odeabank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Odeabank",
+          "buyPrice": "43,9485",
+          "sellPrice": "45,7485",
+          "spreadAmount": "1,80",
+          "spreadPercent": "%4,10",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Odeabank",
+          "buyPrice": "51,3210",
+          "sellPrice": "53,4610",
+          "spreadAmount": "2,14",
+          "spreadPercent": "%4,17",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Odeabank",
+          "buyPrice": "6.597,29",
+          "sellPrice": "6.947,29",
+          "spreadAmount": "350,00",
+          "spreadPercent": "%5,31",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "QNB Finansbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "43,5150",
+          "sellPrice": "46,4350",
+          "spreadAmount": "2,92",
+          "spreadPercent": "%6,71",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "50,3294",
+          "sellPrice": "54,8074",
+          "spreadAmount": "4,48",
+          "spreadPercent": "%8,92",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "6.410,54",
+          "sellPrice": "7.117,75",
+          "spreadAmount": "707,21",
+          "spreadPercent": "%11,03",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Şekerbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Şekerbank",
+          "buyPrice": "43,4010",
+          "sellPrice": "46,1800",
+          "spreadAmount": "2,78",
+          "spreadPercent": "%6,40",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Şekerbank",
+          "buyPrice": "50,7136",
+          "sellPrice": "53,9586",
+          "spreadAmount": "3,24",
+          "spreadPercent": "%6,40",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Şekerbank",
+          "buyPrice": "6.494,29",
+          "sellPrice": "7.040,98",
+          "spreadAmount": "546,69",
+          "spreadPercent": "%8,42",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Türkiye Finans": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "44,3760",
+          "sellPrice": "45,2904",
+          "spreadAmount": "0,91",
+          "spreadPercent": "%2,06",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "51,8812",
+          "sellPrice": "52,8649",
+          "spreadAmount": "0,98",
+          "spreadPercent": "%1,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "6.664,99",
+          "sellPrice": "7.243,10",
+          "spreadAmount": "578,11",
+          "spreadPercent": "%8,67",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "107,98",
+          "sellPrice": "123,04",
+          "spreadAmount": "15,06",
+          "spreadPercent": "%13,94",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Vakıfbank": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "43,6250",
+          "sellPrice": "46,2750",
+          "spreadAmount": "2,65",
+          "spreadPercent": "%6,07",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "51,1260",
+          "sellPrice": "54,0645",
+          "spreadAmount": "2,94",
+          "spreadPercent": "%5,75",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "6.357,29",
+          "sellPrice": "7.507,29",
+          "spreadAmount": "1.150,00",
+          "spreadPercent": "%18,09",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "83,38",
+          "sellPrice": "142,38",
+          "spreadAmount": "59,00",
+          "spreadPercent": "%70,76",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Vakıf Katılım": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "44,3330",
+          "sellPrice": "45,2772",
+          "spreadAmount": "0,94",
+          "spreadPercent": "%2,13",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "51,7986",
+          "sellPrice": "52,9019",
+          "spreadAmount": "1,10",
+          "spreadPercent": "%2,13",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "6.555,21",
+          "sellPrice": "6.960,68",
+          "spreadAmount": "405,47",
+          "spreadPercent": "%6,19",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "106,08",
+          "sellPrice": "112,64",
+          "spreadAmount": "6,56",
+          "spreadPercent": "%6,19",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Yapıkredi": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "43,6310",
+          "sellPrice": "45,9528",
+          "spreadAmount": "2,32",
+          "spreadPercent": "%5,32",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "51,0589",
+          "sellPrice": "53,5966",
+          "spreadAmount": "2,54",
+          "spreadPercent": "%4,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "6.607,93",
+          "sellPrice": "6.881,87",
+          "spreadAmount": "273,94",
+          "spreadPercent": "%4,15",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "104,02",
+          "sellPrice": "112,31",
+          "spreadAmount": "8,29",
+          "spreadPercent": "%7,96",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Ziraat Bankası": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "43,5748",
+          "sellPrice": "46,2702",
+          "spreadAmount": "2,70",
+          "spreadPercent": "%6,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "50,9651",
+          "sellPrice": "54,1176",
+          "spreadAmount": "3,15",
+          "spreadPercent": "%6,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "6.519,83",
+          "sellPrice": "7.470,64",
+          "spreadAmount": "950,81",
+          "spreadPercent": "%14,58",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "105,16",
+          "sellPrice": "120,49",
+          "spreadAmount": "15,33",
+          "spreadPercent": "%14,58",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Ziraat Dinamik": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "43,6184",
+          "sellPrice": "46,0157",
+          "spreadAmount": "2,40",
+          "spreadPercent": "%5,50",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "51,0161",
+          "sellPrice": "53,8200",
+          "spreadAmount": "2,80",
+          "spreadPercent": "%5,50",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "6.519,83",
+          "sellPrice": "7.433,29",
+          "spreadAmount": "913,46",
+          "spreadPercent": "%14,01",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Ziraat Katılım": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "40,1163",
+          "sellPrice": "50,0464",
+          "spreadAmount": "9,93",
+          "spreadPercent": "%24,75",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "46,9751",
+          "sellPrice": "58,6614",
+          "spreadAmount": "11,69",
+          "spreadPercent": "%24,88",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "6.107,13",
+          "sellPrice": "7.700,19",
+          "spreadAmount": "1.593,06",
+          "spreadPercent": "%26,09",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "100,59",
+          "sellPrice": "127,12",
+          "spreadAmount": "26,53",
+          "spreadPercent": "%26,38",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Papara": [
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Papara",
+          "buyPrice": "6.627,36",
+          "sellPrice": "6.873,21",
+          "spreadAmount": "245,85",
+          "spreadPercent": "%3,71",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Papara",
+          "buyPrice": "107,23",
+          "sellPrice": "111,33",
+          "spreadAmount": "4,10",
+          "spreadPercent": "%3,82",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "Hepsipay": [
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Hepsipay",
+          "buyPrice": "6.627,36",
+          "sellPrice": "6.886,96",
+          "spreadAmount": "259,60",
+          "spreadPercent": "%3,92",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Hepsipay",
+          "buyPrice": "107,31",
+          "sellPrice": "111,64",
+          "spreadAmount": "4,33",
+          "spreadPercent": "%4,03",
+          "category": "Kıymetli Madenler"
+        }
+      ]
+    },
+    "byAsset": {
+      "USD": [
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "44,9100",
+          "sellPrice": "44,9200",
+          "spreadAmount": "0,01",
+          "spreadPercent": "%0,02",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Merkez Bankası",
+          "buyPrice": "44,8132",
+          "sellPrice": "44,8939",
+          "spreadAmount": "0,08",
+          "spreadPercent": "%0,18",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Venüs",
+          "buyPrice": "44,9040",
+          "sellPrice": "45,0140",
+          "spreadAmount": "0,11",
+          "spreadPercent": "%0,24",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "44,8108",
+          "sellPrice": "44,9510",
+          "spreadAmount": "0,14",
+          "spreadPercent": "%0,31",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "DestekBank",
+          "buyPrice": "44,7583",
+          "sellPrice": "44,9100",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,34",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "44,7716",
+          "sellPrice": "44,9243",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "44,8450",
+          "sellPrice": "45,0060",
+          "spreadAmount": "0,16",
+          "spreadPercent": "%0,36",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Harem",
+          "buyPrice": "44,8761",
+          "sellPrice": "45,0459",
+          "spreadAmount": "0,17",
+          "spreadPercent": "%0,38",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Odacı",
+          "buyPrice": "44,8740",
+          "sellPrice": "45,0770",
+          "spreadAmount": "0,20",
+          "spreadPercent": "%0,45",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "44,7563",
+          "sellPrice": "45,4310",
+          "spreadAmount": "0,67",
+          "spreadPercent": "%1,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Getirfinans",
+          "buyPrice": "44,5426",
+          "sellPrice": "45,2415",
+          "spreadAmount": "0,70",
+          "spreadPercent": "%1,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Fibabanka",
+          "buyPrice": "44,5426",
+          "sellPrice": "45,2416",
+          "spreadAmount": "0,70",
+          "spreadPercent": "%1,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "44,3760",
+          "sellPrice": "45,2904",
+          "spreadAmount": "0,91",
+          "spreadPercent": "%2,06",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "44,3330",
+          "sellPrice": "45,2772",
+          "spreadAmount": "0,94",
+          "spreadPercent": "%2,13",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "44,3656",
+          "sellPrice": "45,4090",
+          "spreadAmount": "1,04",
+          "spreadPercent": "%2,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "44,3503",
+          "sellPrice": "45,5202",
+          "spreadAmount": "1,17",
+          "spreadPercent": "%2,64",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Anadolubank",
+          "buyPrice": "44,3121",
+          "sellPrice": "45,4973",
+          "spreadAmount": "1,19",
+          "spreadPercent": "%2,66",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Enpara",
+          "buyPrice": "44,0750",
+          "sellPrice": "45,8750",
+          "spreadAmount": "1,80",
+          "spreadPercent": "%4,08",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Odeabank",
+          "buyPrice": "43,9485",
+          "sellPrice": "45,7485",
+          "spreadAmount": "1,80",
+          "spreadPercent": "%4,10",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "43,7820",
+          "sellPrice": "45,7820",
+          "spreadAmount": "2,00",
+          "spreadPercent": "%4,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "ING Bank",
+          "buyPrice": "43,8777",
+          "sellPrice": "45,8954",
+          "spreadAmount": "2,02",
+          "spreadPercent": "%4,59",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "HSBC",
+          "buyPrice": "44,0419",
+          "sellPrice": "46,0671",
+          "spreadAmount": "2,03",
+          "spreadPercent": "%4,60",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "44,0150",
+          "sellPrice": "46,2790",
+          "spreadAmount": "2,26",
+          "spreadPercent": "%5,14",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "43,6310",
+          "sellPrice": "45,9528",
+          "spreadAmount": "2,32",
+          "spreadPercent": "%5,32",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "43,6184",
+          "sellPrice": "46,0157",
+          "spreadAmount": "2,40",
+          "spreadPercent": "%5,50",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "43,7650",
+          "sellPrice": "46,1750",
+          "spreadAmount": "2,41",
+          "spreadPercent": "%5,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "İş Bankası",
+          "buyPrice": "43,7267",
+          "sellPrice": "46,2486",
+          "spreadAmount": "2,52",
+          "spreadPercent": "%5,77",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "43,6250",
+          "sellPrice": "46,2750",
+          "spreadAmount": "2,65",
+          "spreadPercent": "%6,07",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "43,5748",
+          "sellPrice": "46,2702",
+          "spreadAmount": "2,70",
+          "spreadPercent": "%6,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Şekerbank",
+          "buyPrice": "43,4010",
+          "sellPrice": "46,1800",
+          "spreadAmount": "2,78",
+          "spreadPercent": "%6,40",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Denizbank",
+          "buyPrice": "43,4122",
+          "sellPrice": "46,2123",
+          "spreadAmount": "2,80",
+          "spreadPercent": "%6,45",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Halkbank",
+          "buyPrice": "43,7448",
+          "sellPrice": "46,5948",
+          "spreadAmount": "2,85",
+          "spreadPercent": "%6,52",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "43,5150",
+          "sellPrice": "46,4350",
+          "spreadAmount": "2,92",
+          "spreadPercent": "%6,71",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Akbank",
+          "buyPrice": "43,4730",
+          "sellPrice": "46,4730",
+          "spreadAmount": "3,00",
+          "spreadPercent": "%6,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "42,9490",
+          "sellPrice": "46,8010",
+          "spreadAmount": "3,85",
+          "spreadPercent": "%8,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "42,7990",
+          "sellPrice": "46,8010",
+          "spreadAmount": "4,00",
+          "spreadPercent": "%9,35",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "USD",
+          "assetName": "Dolar",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "40,1163",
+          "sellPrice": "50,0464",
+          "spreadAmount": "9,93",
+          "spreadPercent": "%24,75",
+          "category": "Döviz"
+        }
+      ],
+      "EUR": [
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "52,4500",
+          "sellPrice": "52,5000",
+          "spreadAmount": "0,05",
+          "spreadPercent": "%0,10",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Merkez Bankası",
+          "buyPrice": "52,6499",
+          "sellPrice": "52,7447",
+          "spreadAmount": "0,09",
+          "spreadPercent": "%0,18",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "52,4047",
+          "sellPrice": "52,5539",
+          "spreadAmount": "0,15",
+          "spreadPercent": "%0,28",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "DestekBank",
+          "buyPrice": "52,2768",
+          "sellPrice": "52,4737",
+          "spreadAmount": "0,20",
+          "spreadPercent": "%0,38",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "52,2698",
+          "sellPrice": "52,4796",
+          "spreadAmount": "0,21",
+          "spreadPercent": "%0,41",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Venüs",
+          "buyPrice": "52,3910",
+          "sellPrice": "52,6350",
+          "spreadAmount": "0,24",
+          "spreadPercent": "%0,45",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "52,3050",
+          "sellPrice": "52,5820",
+          "spreadAmount": "0,28",
+          "spreadPercent": "%0,53",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Harem",
+          "buyPrice": "52,3421",
+          "sellPrice": "52,6564",
+          "spreadAmount": "0,31",
+          "spreadPercent": "%0,60",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Odacı",
+          "buyPrice": "52,3160",
+          "sellPrice": "52,6980",
+          "spreadAmount": "0,38",
+          "spreadPercent": "%0,73",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Getirfinans",
+          "buyPrice": "52,0541",
+          "sellPrice": "52,8239",
+          "spreadAmount": "0,77",
+          "spreadPercent": "%1,48",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Fibabanka",
+          "buyPrice": "52,0536",
+          "sellPrice": "52,8235",
+          "spreadAmount": "0,77",
+          "spreadPercent": "%1,48",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "52,2951",
+          "sellPrice": "53,0835",
+          "spreadAmount": "0,79",
+          "spreadPercent": "%1,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "51,8812",
+          "sellPrice": "52,8649",
+          "spreadAmount": "0,98",
+          "spreadPercent": "%1,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "51,7986",
+          "sellPrice": "52,9019",
+          "spreadAmount": "1,10",
+          "spreadPercent": "%2,13",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "51,8098",
+          "sellPrice": "53,1981",
+          "spreadAmount": "1,39",
+          "spreadPercent": "%2,68",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "51,4061",
+          "sellPrice": "53,1474",
+          "spreadAmount": "1,74",
+          "spreadPercent": "%3,39",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Odeabank",
+          "buyPrice": "51,3210",
+          "sellPrice": "53,4610",
+          "spreadAmount": "2,14",
+          "spreadPercent": "%4,17",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "ING Bank",
+          "buyPrice": "51,2581",
+          "sellPrice": "53,5788",
+          "spreadAmount": "2,32",
+          "spreadPercent": "%4,52",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "51,1530",
+          "sellPrice": "53,4890",
+          "spreadAmount": "2,34",
+          "spreadPercent": "%4,57",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "51,0589",
+          "sellPrice": "53,5966",
+          "spreadAmount": "2,54",
+          "spreadPercent": "%4,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Anadolubank",
+          "buyPrice": "51,3030",
+          "sellPrice": "53,8721",
+          "spreadAmount": "2,57",
+          "spreadPercent": "%4,99",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Enpara",
+          "buyPrice": "51,2353",
+          "sellPrice": "53,8776",
+          "spreadAmount": "2,64",
+          "spreadPercent": "%5,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "51,0161",
+          "sellPrice": "53,8200",
+          "spreadAmount": "2,80",
+          "spreadPercent": "%5,50",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "51,1300",
+          "sellPrice": "53,9560",
+          "spreadAmount": "2,83",
+          "spreadPercent": "%5,53",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "51,2801",
+          "sellPrice": "54,1484",
+          "spreadAmount": "2,87",
+          "spreadPercent": "%5,59",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "51,1260",
+          "sellPrice": "54,0645",
+          "spreadAmount": "2,94",
+          "spreadPercent": "%5,75",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "İş Bankası",
+          "buyPrice": "51,0903",
+          "sellPrice": "54,0369",
+          "spreadAmount": "2,95",
+          "spreadPercent": "%5,77",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "50,9651",
+          "sellPrice": "54,1176",
+          "spreadAmount": "3,15",
+          "spreadPercent": "%6,19",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "HSBC",
+          "buyPrice": "51,0434",
+          "sellPrice": "54,2744",
+          "spreadAmount": "3,23",
+          "spreadPercent": "%6,34",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Şekerbank",
+          "buyPrice": "50,7136",
+          "sellPrice": "53,9586",
+          "spreadAmount": "3,24",
+          "spreadPercent": "%6,40",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Denizbank",
+          "buyPrice": "50,7159",
+          "sellPrice": "53,9871",
+          "spreadAmount": "3,27",
+          "spreadPercent": "%6,46",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Halkbank",
+          "buyPrice": "51,3170",
+          "sellPrice": "54,6603",
+          "spreadAmount": "3,34",
+          "spreadPercent": "%6,51",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Akbank",
+          "buyPrice": "50,7943",
+          "sellPrice": "54,2995",
+          "spreadAmount": "3,51",
+          "spreadPercent": "%6,90",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "50,3294",
+          "sellPrice": "54,8074",
+          "spreadAmount": "4,48",
+          "spreadPercent": "%8,92",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "50,4290",
+          "sellPrice": "54,9520",
+          "spreadAmount": "4,52",
+          "spreadPercent": "%8,97",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "50,0650",
+          "sellPrice": "54,9180",
+          "spreadAmount": "4,85",
+          "spreadPercent": "%9,69",
+          "category": "Döviz"
+        },
+        {
+          "assetCode": "EUR",
+          "assetName": "Euro",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "46,9751",
+          "sellPrice": "58,6614",
+          "spreadAmount": "11,69",
+          "spreadPercent": "%24,88",
+          "category": "Döviz"
+        }
+      ],
+      "XAU": [
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Kapalıçarşı",
+          "buyPrice": "6.838,06",
+          "sellPrice": "6.844,09",
+          "spreadAmount": "6,03",
+          "spreadPercent": "%0,09",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Odacı",
+          "buyPrice": "6.780,00",
+          "sellPrice": "6.824,00",
+          "spreadAmount": "44,00",
+          "spreadPercent": "%0,66",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "6.715,28",
+          "sellPrice": "6.760,11",
+          "spreadAmount": "44,83",
+          "spreadPercent": "%0,67",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "DestekBank",
+          "buyPrice": "6.711,73",
+          "sellPrice": "6.758,26",
+          "spreadAmount": "46,53",
+          "spreadPercent": "%0,69",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "6.711,65",
+          "sellPrice": "6.774,54",
+          "spreadAmount": "62,89",
+          "spreadPercent": "%0,94",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Getirfinans",
+          "buyPrice": "6.738,27",
+          "sellPrice": "6.806,73",
+          "spreadAmount": "68,46",
+          "spreadPercent": "%1,02",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Fibabanka",
+          "buyPrice": "6.736,09",
+          "sellPrice": "6.805,32",
+          "spreadAmount": "69,23",
+          "spreadPercent": "%1,03",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Harem",
+          "buyPrice": "6.759,76",
+          "sellPrice": "6.861,54",
+          "spreadAmount": "101,78",
+          "spreadPercent": "%1,51",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "6.660,66",
+          "sellPrice": "6.873,21",
+          "spreadAmount": "212,55",
+          "spreadPercent": "%3,19",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "6.706,23",
+          "sellPrice": "6.925,83",
+          "spreadAmount": "219,60",
+          "spreadPercent": "%3,27",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Papara",
+          "buyPrice": "6.627,36",
+          "sellPrice": "6.873,21",
+          "spreadAmount": "245,85",
+          "spreadPercent": "%3,71",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Altınkaynak",
+          "buyPrice": "6.724,03",
+          "sellPrice": "6.980,00",
+          "spreadAmount": "255,97",
+          "spreadPercent": "%3,81",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Hayat Finans",
+          "buyPrice": "6.636,20",
+          "sellPrice": "6.890,86",
+          "spreadAmount": "254,66",
+          "spreadPercent": "%3,84",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Hepsipay",
+          "buyPrice": "6.627,36",
+          "sellPrice": "6.886,96",
+          "spreadAmount": "259,60",
+          "spreadPercent": "%3,92",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "6.607,93",
+          "sellPrice": "6.881,87",
+          "spreadAmount": "273,94",
+          "spreadPercent": "%4,15",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Odeabank",
+          "buyPrice": "6.597,29",
+          "sellPrice": "6.947,29",
+          "spreadAmount": "350,00",
+          "spreadPercent": "%5,31",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "6.561,08",
+          "sellPrice": "6.952,50",
+          "spreadAmount": "391,42",
+          "spreadPercent": "%5,97",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "6.555,21",
+          "sellPrice": "6.960,68",
+          "spreadAmount": "405,47",
+          "spreadPercent": "%6,19",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Denizbank",
+          "buyPrice": "6.555,84",
+          "sellPrice": "6.980,27",
+          "spreadAmount": "424,43",
+          "spreadPercent": "%6,47",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Enpara",
+          "buyPrice": "6.589,82",
+          "sellPrice": "7.042,01",
+          "spreadAmount": "452,19",
+          "spreadPercent": "%6,86",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "6.678,10",
+          "sellPrice": "7.147,13",
+          "spreadAmount": "469,03",
+          "spreadPercent": "%7,02",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Şekerbank",
+          "buyPrice": "6.494,29",
+          "sellPrice": "7.040,98",
+          "spreadAmount": "546,69",
+          "spreadPercent": "%8,42",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "ING Bank",
+          "buyPrice": "6.493,71",
+          "sellPrice": "7.052,91",
+          "spreadAmount": "559,20",
+          "spreadPercent": "%8,61",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "6.664,99",
+          "sellPrice": "7.243,10",
+          "spreadAmount": "578,11",
+          "spreadPercent": "%8,67",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Alternatif Bank",
+          "buyPrice": "6.530,10",
+          "sellPrice": "7.196,61",
+          "spreadAmount": "666,51",
+          "spreadPercent": "%10,21",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "QNB Finansbank",
+          "buyPrice": "6.410,54",
+          "sellPrice": "7.117,75",
+          "spreadAmount": "707,21",
+          "spreadPercent": "%11,03",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Akbank",
+          "buyPrice": "6.550,73",
+          "sellPrice": "7.379,17",
+          "spreadAmount": "828,44",
+          "spreadPercent": "%12,65",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "İş Bankası",
+          "buyPrice": "6.358,59",
+          "sellPrice": "7.162,72",
+          "spreadAmount": "804,13",
+          "spreadPercent": "%12,65",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Dinamik",
+          "buyPrice": "6.519,83",
+          "sellPrice": "7.433,29",
+          "spreadAmount": "913,46",
+          "spreadPercent": "%14,01",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "6.519,83",
+          "sellPrice": "7.470,64",
+          "spreadAmount": "950,81",
+          "spreadPercent": "%14,58",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "6.357,29",
+          "sellPrice": "7.507,29",
+          "spreadAmount": "1.150,00",
+          "spreadPercent": "%18,09",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "HSBC",
+          "buyPrice": "6.590,10",
+          "sellPrice": "7.900,71",
+          "spreadAmount": "1.310,61",
+          "spreadPercent": "%19,89",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Anadolubank",
+          "buyPrice": "6.151,93",
+          "sellPrice": "7.378,99",
+          "spreadAmount": "1.227,06",
+          "spreadPercent": "%19,95",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Halkbank",
+          "buyPrice": "6.328,17",
+          "sellPrice": "7.636,60",
+          "spreadAmount": "1.308,43",
+          "spreadPercent": "%20,68",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "6.107,13",
+          "sellPrice": "7.700,19",
+          "spreadAmount": "1.593,06",
+          "spreadPercent": "%26,09",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "5.709,09",
+          "sellPrice": "7.841,29",
+          "spreadAmount": "2.132,20",
+          "spreadPercent": "%37,35",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAU",
+          "assetName": "Altın",
+          "sourceName": "CEPTETEB",
+          "buyPrice": "5.633,57",
+          "sellPrice": "8.093,45",
+          "spreadAmount": "2.459,88",
+          "spreadPercent": "%43,66",
+          "category": "Kıymetli Madenler"
+        }
+      ],
+      "XAG": [
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "DestekBank",
+          "buyPrice": "108,62",
+          "sellPrice": "109,45",
+          "spreadAmount": "0,83",
+          "spreadPercent": "%0,76",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Dünya Katılım",
+          "buyPrice": "108,59",
+          "sellPrice": "109,56",
+          "spreadAmount": "0,97",
+          "spreadPercent": "%0,89",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Misyon Bank",
+          "buyPrice": "108,52",
+          "sellPrice": "109,60",
+          "spreadAmount": "1,08",
+          "spreadPercent": "%1,00",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Getirfinans",
+          "buyPrice": "108,66",
+          "sellPrice": "110,93",
+          "spreadAmount": "2,27",
+          "spreadPercent": "%2,10",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Fibabanka",
+          "buyPrice": "108,56",
+          "sellPrice": "110,84",
+          "spreadAmount": "2,28",
+          "spreadPercent": "%2,10",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Kuveyt Türk",
+          "buyPrice": "107,77",
+          "sellPrice": "111,22",
+          "spreadAmount": "3,45",
+          "spreadPercent": "%3,20",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Papara",
+          "buyPrice": "107,23",
+          "sellPrice": "111,33",
+          "spreadAmount": "4,10",
+          "spreadPercent": "%3,82",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Hepsipay",
+          "buyPrice": "107,31",
+          "sellPrice": "111,64",
+          "spreadAmount": "4,33",
+          "spreadPercent": "%4,03",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "TOM Bank Hadi",
+          "buyPrice": "109,40",
+          "sellPrice": "114,87",
+          "spreadAmount": "5,47",
+          "spreadPercent": "%5,00",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Harem",
+          "buyPrice": "106,31",
+          "sellPrice": "111,85",
+          "spreadAmount": "5,54",
+          "spreadPercent": "%5,21",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Vakıf Katılım",
+          "buyPrice": "106,08",
+          "sellPrice": "112,64",
+          "spreadAmount": "6,56",
+          "spreadPercent": "%6,19",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Denizbank",
+          "buyPrice": "105,54",
+          "sellPrice": "112,42",
+          "spreadAmount": "6,88",
+          "spreadPercent": "%6,52",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Albaraka Türk",
+          "buyPrice": "105,60",
+          "sellPrice": "113,86",
+          "spreadAmount": "8,26",
+          "spreadPercent": "%7,81",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Yapıkredi",
+          "buyPrice": "104,02",
+          "sellPrice": "112,31",
+          "spreadAmount": "8,29",
+          "spreadPercent": "%7,96",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Garanti BBVA",
+          "buyPrice": "104,01",
+          "sellPrice": "115,38",
+          "spreadAmount": "11,37",
+          "spreadPercent": "%10,93",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Türkiye Finans",
+          "buyPrice": "107,98",
+          "sellPrice": "123,04",
+          "spreadAmount": "15,06",
+          "spreadPercent": "%13,94",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Ziraat Bankası",
+          "buyPrice": "105,16",
+          "sellPrice": "120,49",
+          "spreadAmount": "15,33",
+          "spreadPercent": "%14,58",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Akbank",
+          "buyPrice": "104,49",
+          "sellPrice": "124,03",
+          "spreadAmount": "19,54",
+          "spreadPercent": "%18,69",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Ziraat Katılım",
+          "buyPrice": "100,59",
+          "sellPrice": "127,12",
+          "spreadAmount": "26,53",
+          "spreadPercent": "%26,38",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Anadolubank",
+          "buyPrice": "93,26",
+          "sellPrice": "125,78",
+          "spreadAmount": "32,52",
+          "spreadPercent": "%34,86",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Emlak Katılım",
+          "buyPrice": "93,05",
+          "sellPrice": "126,03",
+          "spreadAmount": "32,98",
+          "spreadPercent": "%35,45",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "HSBC",
+          "buyPrice": "104,24",
+          "sellPrice": "143,63",
+          "spreadAmount": "39,39",
+          "spreadPercent": "%37,82",
+          "category": "Kıymetli Madenler"
+        },
+        {
+          "assetCode": "XAG",
+          "assetName": "Gümüş",
+          "sourceName": "Vakıfbank",
+          "buyPrice": "83,38",
+          "sellPrice": "142,38",
+          "spreadAmount": "59,00",
+          "spreadPercent": "%70,76",
+          "category": "Kıymetli Madenler"
+        }
+      ]
+    },
+    "byCategory": {
+      "Döviz": [
+        "USD",
+        "EUR"
+      ],
+      "Kıymetli Madenler": [
+        "XAU",
+        "XAG"
+      ]
+    }
+  }
+}
