@@ -78,6 +78,6 @@ async function getDovizComData() {
         if (browser) await browser.close();
         throw err;
     }
-}
+} 
 
 module.exports = { getDovizComData };
