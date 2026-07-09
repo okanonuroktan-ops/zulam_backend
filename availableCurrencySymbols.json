@@ -1,0 +1,223 @@
+{
+  "success": true,
+  "total": 54,
+  "lastUpdate": "08.07.2026 15:07:06",
+  "data": [
+    {
+      "name": "Argentine Peso",
+      "code": "ARS"
+    },
+    {
+      "name": "Australian Dollar",
+      "code": "AUD"
+    },
+    {
+      "name": "Bahraini Dinar",
+      "code": "BHD"
+    },
+    {
+      "name": "Botswana Pula",
+      "code": "BWP"
+    },
+    {
+      "name": "Brazilian Real",
+      "code": "BRL"
+    },
+    {
+      "name": "British Pound",
+      "code": "GBP"
+    },
+    {
+      "name": "Bruneian Dollar",
+      "code": "BND"
+    },
+    {
+      "name": "Bulgarian Lev",
+      "code": "BGN"
+    },
+    {
+      "name": "Canadian Dollar",
+      "code": "CAD"
+    },
+    {
+      "name": "Chilean Peso",
+      "code": "CLP"
+    },
+    {
+      "name": "Chinese Yuan Renminbi",
+      "code": "CNY"
+    },
+    {
+      "name": "Colombian Peso",
+      "code": "COP"
+    },
+    {
+      "name": "Croatian Kuna",
+      "code": "HRK"
+    },
+    {
+      "name": "Czech Koruna",
+      "code": "CZK"
+    },
+    {
+      "name": "Danish Krone",
+      "code": "DKK"
+    },
+    {
+      "name": "Emirati Dirham",
+      "code": "AED"
+    },
+    {
+      "name": "Euro",
+      "code": "EUR"
+    },
+    {
+      "name": "Hong Kong Dollar",
+      "code": "HKD"
+    },
+    {
+      "name": "Hungarian Forint",
+      "code": "HUF"
+    },
+    {
+      "name": "Icelandic Krona",
+      "code": "ISK"
+    },
+    {
+      "name": "Indian Rupee",
+      "code": "INR"
+    },
+    {
+      "name": "Indonesian Rupiah",
+      "code": "IDR"
+    },
+    {
+      "name": "Iranian Rial",
+      "code": "IRR"
+    },
+    {
+      "name": "Israeli Shekel",
+      "code": "ILS"
+    },
+    {
+      "name": "Japanese Yen",
+      "code": "JPY"
+    },
+    {
+      "name": "Kazakhstani Tenge",
+      "code": "KZT"
+    },
+    {
+      "name": "Kuwaiti Dinar",
+      "code": "KWD"
+    },
+    {
+      "name": "Libyan Dinar",
+      "code": "LYD"
+    },
+    {
+      "name": "Malaysian Ringgit",
+      "code": "MYR"
+    },
+    {
+      "name": "Mauritian Rupee",
+      "code": "MUR"
+    },
+    {
+      "name": "Mexican Peso",
+      "code": "MXN"
+    },
+    {
+      "name": "Nepalese Rupee",
+      "code": "NPR"
+    },
+    {
+      "name": "New Zealand Dollar",
+      "code": "NZD"
+    },
+    {
+      "name": "Norwegian Krone",
+      "code": "NOK"
+    },
+    {
+      "name": "Omani Rial",
+      "code": "OMR"
+    },
+    {
+      "name": "Pakistani Rupee",
+      "code": "PKR"
+    },
+    {
+      "name": "Philippine Peso",
+      "code": "PHP"
+    },
+    {
+      "name": "Polish Zloty",
+      "code": "PLN"
+    },
+    {
+      "name": "Qatari Riyal",
+      "code": "QAR"
+    },
+    {
+      "name": "Romanian New Leu",
+      "code": "RON"
+    },
+    {
+      "name": "Russian Ruble",
+      "code": "RUB"
+    },
+    {
+      "name": "Saudi Arabian Riyal",
+      "code": "SAR"
+    },
+    {
+      "name": "Singapore Dollar",
+      "code": "SGD"
+    },
+    {
+      "name": "South African Rand",
+      "code": "ZAR"
+    },
+    {
+      "name": "South Korean Won",
+      "code": "KRW"
+    },
+    {
+      "name": "Sri Lankan Rupee",
+      "code": "LKR"
+    },
+    {
+      "name": "Swedish Krona",
+      "code": "SEK"
+    },
+    {
+      "name": "Swiss Franc",
+      "code": "CHF"
+    },
+    {
+      "name": "Taiwan New Dollar",
+      "code": "TWD"
+    },
+    {
+      "name": "Thai Baht",
+      "code": "THB"
+    },
+    {
+      "name": "Trinidadian Dollar",
+      "code": "TTD"
+    },
+    {
+      "name": "Turkish Lira",
+      "code": "TRY"
+    },
+    {
+      "name": "Venezuelan Bolivar",
+      "code": "VES"
+    },
+    {
+      "name": "US Dollar",
+      "code": "USD"
+    }
+  ]
+}

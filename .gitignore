@@ -1,0 +1,11 @@
+# Node modülleri
+node_modules/
+
+# Çevresel değişkenler (Hassas bilgiler burada olur)
+.env
+
+# Derleme veya önbellek dosyaları
+dist/
+build/
+.puppeteer_cache/
+.DS_Store
