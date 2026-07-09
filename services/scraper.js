@@ -198,7 +198,7 @@ async function fetchFromCollectApi(url) {
 
         return [];
     }
-}
+} 
 
 function createSerbestPiyasaUrl(asset, type = null) {
     const params = new URLSearchParams();
