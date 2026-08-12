@@ -39,7 +39,11 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
     .env:
     COLLECT_API_TOKEN=apikey SENIN_YENI_TOKENIN
 */
-const COLLECT_API_TOKEN = process.env.COLLECT_API_TOKEN || 'apikey 54OWZKgEzaUUT54rqfpAf2:4mo2qETj2DFPrNXgZW4zwH'; // CollectAPI token'ınızı buraya ekleyin
+const COLLECT_API_TOKEN = process.env.COLLECT_API_TOKEN;
+
+if (!COLLECT_API_TOKEN) {
+    throw new Error('COLLECT_API_TOKEN .env içinde tanımlı değil.');
+}
 
 const REQUEST_DELAY_MS = 1500;
 

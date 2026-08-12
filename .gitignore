@@ -9,3 +9,5 @@ dist/
 build/
 .puppeteer_cache/
 .DS_Store
+
+data.json

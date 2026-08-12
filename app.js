@@ -19,75 +19,248 @@
   API geçici olarak veri çekemezse memory cache korunur.
   Eğer memory cache henüz oluşmadıysa data.json dosyasından eski veri
   okunmaya çalışılır.
+
+  .env dosyasını yükler
+data.json yolunu güvenli kullanır
+/health endpoint ekler
+Aynı anda iki refresh çalışmasını engeller
+API başarısız olursa eski cache’i korur
+Memory cache yoksa data.json’dan okur
+/api/kurlar endpointini daha stabil yapar
+Cron ayarını .env’den alır
+
 */
+
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const path = require('path');
 const cron = require('node-cron');
 
-// Sadece CollectAPI üzerinden çalışan ana scraper
-const { getDovizComData } = require('./services/scraper'); 
-// Eski formata çeviren kendi fonksiyonun (BUNA DOKUNMADIK)
+const { getDovizComData } = require('./services/scraper');
 const { formatForZulam } = require('./utils/dataFormatter');
 
 const app = express();
+
 app.use(cors());
+app.use(express.json());
+
+const PORT = process.env.PORT || 3000;
+const DATA_FILE_PATH = path.join(__dirname, 'data.json');
+const REFRESH_CRON = process.env.REFRESH_CRON || '*/60 * * * *';
+const AUTO_REFRESH_ON_START = process.env.AUTO_REFRESH_ON_START !== 'false';
 
 let zulamMemoryCache = null;
+let isRefreshing = false;
 
-async function refreshData() {
-    console.log(`\n--- 🔄 Veri Güncelleme Tetiklendi (${new Date().toLocaleTimeString()}) ---`);
-    let rawData = [];
+function getCurrentIsoDate() {
+    return new Date().toISOString();
+}
 
+function getCurrentDisplayDate() {
+    return new Date().toLocaleString('tr-TR', {
+        timeZone: 'Europe/Istanbul',
+    });
+}
+
+function readCacheFromFile() {
     try {
-        console.log("🌐 CollectAPI üzerinden veri çekiliyor...");
-        rawData = await getDovizComData();
-        console.log(`✅ API'den toplam ${rawData.length} adet ham veri satırı başarıyla çekildi.`);
+        if (!fs.existsSync(DATA_FILE_PATH)) {
+            return null;
+        }
 
-        // Veriyi formatla (Senin eski formatter'ın bu ham veriyi bySource, byAsset, byCategory olarak ayrıştıracak)
-        const formatted = formatForZulam(rawData);
-        
-        // Belleğe yaz
-        zulamMemoryCache = {
-            success: true,
-            lastUpdate: new Date().toLocaleString('tr-TR'),
-            isFallbackMode: false, 
-            data: formatted
-        };
+        const fileContent = fs.readFileSync(DATA_FILE_PATH, 'utf8');
 
-        // Json dosyasına yaz (Flutter uygulaması burayı okuyor olabilir veya doğrudan endpoint'ten alabilir)
-        fs.writeFileSync('./data.json', JSON.stringify(zulamMemoryCache, null, 2));
-        console.log(`💾 Veriler başarıyla formatlanıp data.json dosyasına yazıldı.`);
-        
+        if (!fileContent.trim()) {
+            return null;
+        }
+
+        const parsedData = JSON.parse(fileContent);
+
+        if (!parsedData || parsedData.success !== true || !parsedData.data) {
+            return null;
+        }
+
+        return parsedData;
     } catch (error) {
-        console.error("❌ Veri Çekme veya Formatlama Hatası:", error.message);
-        // Hata anında memoryCache sıfırlanmasın, eski veriyle devam etsin
+        console.error('❌ data.json okunamadı:', error.message);
+        return null;
     }
 }
 
-// Uygulama başlarken ilk veriyi çek
-refreshData();
+function writeCacheToFile(cacheData) {
+    try {
+        fs.writeFileSync(
+            DATA_FILE_PATH,
+            JSON.stringify(cacheData, null, 2),
+            'utf8'
+        );
 
-// Her 15 dakikada bir veriyi güncelle (CollectAPI limiti için ideal)
-cron.schedule('*/15 * * * *', refreshData);
-
-// API Endpoint (Flutter uygulamasının bağlandığı yer)
-app.get('/api/kurlar', (req, res) => {
-    if (!zulamMemoryCache) {
-        // Eğer sunucu yeni kalktıysa ve ilk cache oluşmadıysa varsa eski data.json'ı oku
-        try {
-            if (fs.existsSync('./data.json')) {
-                const oldData = fs.readFileSync('./data.json', 'utf8');
-                return res.json(JSON.parse(oldData));
-            }
-        } catch(e) {}
-
-        return res.status(503).json({ success: false, message: "Veriler henüz hazır değil, lütfen bekleyin." });
+        console.log('💾 Veriler data.json dosyasına yazıldı.');
+    } catch (error) {
+        console.error('❌ data.json yazılamadı:', error.message);
     }
-    res.json(zulamMemoryCache);
+}
+
+function loadInitialCache() {
+    const fileCache = readCacheFromFile();
+
+    if (fileCache) {
+        zulamMemoryCache = {
+            ...fileCache,
+            isFallbackMode: true,
+            source: 'file-cache',
+        };
+
+        console.log('📦 data.json üzerinden başlangıç cache yüklendi.');
+        return;
+    }
+
+    console.log('ℹ️ Başlangıçta kullanılabilir data.json cache bulunamadı.');
+}
+
+async function refreshData() {
+    if (isRefreshing) {
+        console.log('⏳ Refresh zaten devam ediyor, yeni istek atlanıyor.');
+        return zulamMemoryCache;
+    }
+
+    isRefreshing = true;
+
+    console.log(
+        `\n--- 🔄 Veri Güncelleme Tetiklendi (${getCurrentDisplayDate()}) ---`
+    );
+
+    try {
+        console.log('🌐 CollectAPI üzerinden veri çekiliyor...');
+
+        const rawData = await getDovizComData();
+
+        if (!Array.isArray(rawData) || rawData.length === 0) {
+            throw new Error('CollectAPI boş veri döndürdü.');
+        }
+
+        console.log(
+            `✅ API'den toplam ${rawData.length} adet ham veri satırı çekildi.`
+        );
+
+        const formatted = formatForZulam(rawData);
+
+        const newCache = {
+            success: true,
+            source: 'live-api',
+            lastUpdate: getCurrentIsoDate(),
+            lastUpdateDisplay: getCurrentDisplayDate(),
+            isFallbackMode: false,
+            data: formatted,
+        };
+
+        zulamMemoryCache = newCache;
+        writeCacheToFile(newCache);
+
+        console.log('✅ Veri güncelleme başarıyla tamamlandı.');
+
+        return newCache;
+    } catch (error) {
+        console.error('❌ Veri çekme veya formatlama hatası:', error.message);
+
+        if (zulamMemoryCache) {
+            zulamMemoryCache = {
+                ...zulamMemoryCache,
+                source: zulamMemoryCache.source || 'memory-cache',
+                isFallbackMode: true,
+                fallbackReason: error.message,
+            };
+
+            console.log('⚠️ Eski memory cache korunarak devam ediliyor.');
+            return zulamMemoryCache;
+        }
+
+        const fileCache = readCacheFromFile();
+
+        if (fileCache) {
+            zulamMemoryCache = {
+                ...fileCache,
+                source: 'file-cache',
+                isFallbackMode: true,
+                fallbackReason: error.message,
+            };
+
+            console.log('⚠️ API başarısız oldu, data.json cache kullanılıyor.');
+            return zulamMemoryCache;
+        }
+
+        console.log('❌ Kullanılabilir cache bulunamadı.');
+        return null;
+    } finally {
+        isRefreshing = false;
+    }
+}
+
+app.get('/health', (req, res) => {
+    res.json({
+        success: true,
+        status: 'ok',
+        service: 'zulam-market-api',
+        isRefreshing,
+        hasMemoryCache: Boolean(zulamMemoryCache),
+        time: getCurrentIsoDate(),
+    });
 });
 
-const PORT = 3000;
+app.get('/api/kurlar', async (req, res) => {
+    if (zulamMemoryCache) {
+        return res.json(zulamMemoryCache);
+    }
+
+    const fileCache = readCacheFromFile();
+
+    if (fileCache) {
+        zulamMemoryCache = {
+            ...fileCache,
+            source: 'file-cache',
+            isFallbackMode: true,
+        };
+
+        return res.json(zulamMemoryCache);
+    }
+
+    return res.status(503).json({
+        success: false,
+        message: 'Veriler henüz hazır değil. Lütfen kısa süre sonra tekrar deneyin.',
+        data: null,
+    });
+});
+
+app.post('/api/kurlar/refresh', async (req, res) => {
+    const refreshedData = await refreshData();
+
+    if (!refreshedData) {
+        return res.status(503).json({
+            success: false,
+            message: 'Veri güncellenemedi ve kullanılabilir cache bulunamadı.',
+            data: null,
+        });
+    }
+
+    return res.json(refreshedData);
+});
+
+loadInitialCache();
+
+if (AUTO_REFRESH_ON_START) {
+    refreshData();
+} else {
+    console.log('ℹ️ AUTO_REFRESH_ON_START=false olduğu için başlangıç refresh yapılmadı.');
+}
+
+cron.schedule(REFRESH_CRON, refreshData);
+
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 Zulam API: http://localhost:${PORT}`);
+    console.log(`🚀 Zulam API çalışıyor: http://localhost:${PORT}`);
+    console.log(`🩺 Health check: http://localhost:${PORT}/health`);
+    console.log(`📊 Kur endpoint: http://localhost:${PORT}/api/kurlar`);
+    console.log(`⏱️ Cron: ${REFRESH_CRON}`);
 });
