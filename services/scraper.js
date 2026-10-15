@@ -322,7 +322,7 @@ async function fetchAssetRows(asset, type = null) {
     return rows;
 }
 
-async function getDovizComData() {
+async function getMarketData() {
     console.log('🔍 CollectAPI üzerinden döviz ve kıymetli maden verileri çekiliyor...');
 
     let totalRawData = [];
@@ -344,7 +344,8 @@ async function getDovizComData() {
         const request = allRequests[i];
 
         const rows = await fetchAssetRows(request.asset, request.type);
-        totalRawData.push(...rows);
+
+totalRawData.push(...rows);
 
         if (i < allRequests.length - 1) {
             await delay(REQUEST_DELAY_MS);
@@ -365,4 +366,9 @@ async function getDovizComData() {
     return totalRawData;
 }
 
-module.exports = { getDovizComData };
+const MARKET_ASSET_CODES = [
+    ...CURRENCY_ASSETS,
+    ...METAL_ASSETS,
+].map(asset => asset.assetCode);
+
+module.exports = { getMarketData, MARKET_ASSET_CODES };

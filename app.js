@@ -39,7 +39,10 @@ const fs = require('fs');
 const path = require('path');
 const cron = require('node-cron');
 
-const { getDovizComData } = require('./services/scraper');
+const {
+    getMarketData,
+    MARKET_ASSET_CODES,
+} = require('./services/scraper');
 const { formatForZulam } = require('./utils/dataFormatter');
 
 const app = express();
@@ -48,9 +51,15 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
-const DATA_FILE_PATH = path.join(__dirname, 'data.json');
+const configuredDataPath = process.env.DATA_FILE_PATH?.trim();
+
+const DATA_FILE_PATH = configuredDataPath
+    ? path.resolve(__dirname, configuredDataPath)
+    : path.join(__dirname, 'data.json');
 const REFRESH_CRON = process.env.REFRESH_CRON || '*/60 * * * *';
 const AUTO_REFRESH_ON_START = process.env.AUTO_REFRESH_ON_START !== 'false';
+const AUTO_REFRESH_ENABLED =
+    process.env.AUTO_REFRESH_ENABLED !== 'false';
 
 let zulamMemoryCache = null;
 let isRefreshing = false;
@@ -91,16 +100,38 @@ function readCacheFromFile() {
 }
 
 function writeCacheToFile(cacheData) {
+    const tempFilePath = `${DATA_FILE_PATH}.tmp`;
+
     try {
+                fs.mkdirSync(path.dirname(DATA_FILE_PATH), {
+            recursive: true,
+        });
+        
         fs.writeFileSync(
-            DATA_FILE_PATH,
+            tempFilePath,
             JSON.stringify(cacheData, null, 2),
             'utf8'
         );
 
-        console.log('💾 Veriler data.json dosyasına yazıldı.');
+        fs.renameSync(tempFilePath, DATA_FILE_PATH);
+
+        console.log('💾 Fiyat önbelleği dosyaya kaydedildi.');
     } catch (error) {
-        console.error('❌ data.json yazılamadı:', error.message);
+        console.error(
+            '❌ Fiyat önbelleği dosyaya kaydedilemedi:',
+            error.message
+        );
+
+        try {
+            if (fs.existsSync(tempFilePath)) {
+                fs.unlinkSync(tempFilePath);
+            }
+        } catch (cleanupError) {
+            console.warn(
+                '⚠️ Geçici önbellek dosyası temizlenemedi:',
+                cleanupError.message
+            );
+        }
     }
 }
 
@@ -121,6 +152,108 @@ function loadInitialCache() {
     console.log('ℹ️ Başlangıçta kullanılabilir data.json cache bulunamadı.');
 }
 
+function buildNextCache(rawData, previousCache) {
+    const freshData = formatForZulam(rawData);
+    const freshRows = Object.values(freshData.byAsset).flat();
+
+    // Kullanılabilir yeni veri yoksa mevcut cache değiştirilmez.
+    if (freshRows.length === 0) {
+        throw new Error(
+            'Filtreleme sonrası kullanılabilir fiyat bulunamadı.'
+        );
+    }
+
+    const now = getCurrentIsoDate();
+
+    const keyFor = row =>
+        JSON.stringify([row.assetCode, row.sourceName]);
+
+    const merged = new Map();
+
+    // Yeni gelen fiyatlar önceliklidir.
+    for (const row of freshRows) {
+        merged.set(keyFor(row), {
+            ...row,
+            updatedAt: now,
+            isStale: false,
+        });
+    }
+
+    const oldByAsset = previousCache?.data?.byAsset || {};
+
+    // Bu yenilemede gelmeyen varlık/kaynak kayıtlarını koru.
+    for (const rows of Object.values(oldByAsset)) {
+        if (!Array.isArray(rows)) continue;
+
+        for (const row of rows) {
+            if (!row?.assetCode || !row.sourceName) continue;
+
+            const key = keyFor(row);
+
+            if (merged.has(key)) continue;
+
+            merged.set(key, {
+                ...row,
+                updatedAt:
+                    row.updatedAt ||
+                    previousCache.lastUpdate ||
+                    null,
+                isStale: true,
+            });
+        }
+    }
+
+    // Kaynak filtresi ve sıralama birleşmiş veriye de uygulanır.
+    const data = formatForZulam(Array.from(merged.values()));
+    const finalRows = Object.values(data.byAsset).flat();
+
+    const staleRecords = finalRows
+        .filter(row => row.isStale)
+        .map(row => ({
+            assetCode: row.assetCode,
+            sourceName: row.sourceName,
+            updatedAt: row.updatedAt,
+        }));
+
+    // Yeni veya eski hiçbir fiyatı bulunmayan varlıklar.
+    const missingAssetCodes = MARKET_ASSET_CODES.filter(
+        code => !data.byAsset[code]?.length
+    );
+
+    // Bu yenilemede yeni fiyatı gelmeyen varlıklar.
+    const incompleteAssetCodes = MARKET_ASSET_CODES.filter(
+        code => !freshData.byAsset[code]?.length
+    );
+
+    const isFallbackMode =
+        staleRecords.length > 0 ||
+        incompleteAssetCodes.length > 0;
+
+    return {
+        success: true,
+        source: isFallbackMode ? 'mixed-cache' : 'live-api',
+
+        // Kısmi yenilemede tüm veri yeniymiş gibi tarih değiştirme.
+        lastUpdate: isFallbackMode
+            ? (previousCache?.lastUpdate || now)
+            : now,
+
+        lastUpdateDisplay: isFallbackMode
+            ? (
+                previousCache?.lastUpdateDisplay ||
+                getCurrentDisplayDate()
+            )
+            : getCurrentDisplayDate(),
+
+        lastRefresh: now,
+        isFallbackMode,
+        incompleteAssetCodes,
+        missingAssetCodes,
+        staleRecords,
+        data,
+    };
+}
+
 async function refreshData() {
     if (isRefreshing) {
         console.log('⏳ Refresh zaten devam ediyor, yeni istek atlanıyor.');
@@ -136,7 +269,7 @@ async function refreshData() {
     try {
         console.log('🌐 CollectAPI üzerinden veri çekiliyor...');
 
-        const rawData = await getDovizComData();
+const rawData = await getMarketData();
 
         if (!Array.isArray(rawData) || rawData.length === 0) {
             throw new Error('CollectAPI boş veri döndürdü.');
@@ -146,21 +279,24 @@ async function refreshData() {
             `✅ API'den toplam ${rawData.length} adet ham veri satırı çekildi.`
         );
 
-        const formatted = formatForZulam(rawData);
-
-        const newCache = {
-            success: true,
-            source: 'live-api',
-            lastUpdate: getCurrentIsoDate(),
-            lastUpdateDisplay: getCurrentDisplayDate(),
-            isFallbackMode: false,
-            data: formatted,
-        };
+        const previousCache = zulamMemoryCache || readCacheFromFile();
+const newCache = buildNextCache(rawData, previousCache);
 
         zulamMemoryCache = newCache;
         writeCacheToFile(newCache);
 
-        console.log('✅ Veri güncelleme başarıyla tamamlandı.');
+        if (newCache.isFallbackMode) {
+    console.warn(
+        '⚠️ Kısmi yenileme: eksik fiyatlar için eski kayıtlar korundu.',
+        {
+            incompleteAssetCodes: newCache.incompleteAssetCodes,
+            missingAssetCodes: newCache.missingAssetCodes,
+            staleRecordCount: newCache.staleRecords.length,
+        }
+    );
+} else {
+    console.log('✅ Veri güncelleme başarıyla tamamlandı.');
+}
 
         return newCache;
     } catch (error) {
@@ -235,6 +371,21 @@ app.get('/api/kurlar', async (req, res) => {
 });
 
 app.post('/api/kurlar/refresh', async (req, res) => {
+    const adminToken = process.env.ADMIN_REFRESH_TOKEN?.trim();
+
+    if (!adminToken) {
+        return res.status(503).json({
+            success: false,
+            message: 'Manuel yenileme devre dışı.',
+        });
+    }
+
+    if (req.get('Authorization') !== `Bearer ${adminToken}`) {
+        return res.status(401).json({
+            success: false,
+            message: 'Yetkisiz erişim.',
+        });
+    }
     const refreshedData = await refreshData();
 
     if (!refreshedData) {
@@ -256,7 +407,17 @@ if (AUTO_REFRESH_ON_START) {
     console.log('ℹ️ AUTO_REFRESH_ON_START=false olduğu için başlangıç refresh yapılmadı.');
 }
 
-cron.schedule(REFRESH_CRON, refreshData);
+if (AUTO_REFRESH_ENABLED) {
+    if (!cron.validate(REFRESH_CRON)) {
+        throw new Error('REFRESH_CRON geçersiz.');
+    }
+
+    cron.schedule(REFRESH_CRON, refreshData);
+
+    console.log(`⏱️ Otomatik yenileme açık: ${REFRESH_CRON}`);
+} else {
+    console.log('ℹ️ Otomatik yenileme kapalı.');
+}
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Zulam API çalışıyor: http://localhost:${PORT}`);
