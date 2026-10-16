@@ -56,7 +56,7 @@ const configuredDataPath = process.env.DATA_FILE_PATH?.trim();
 const DATA_FILE_PATH = configuredDataPath
     ? path.resolve(__dirname, configuredDataPath)
     : path.join(__dirname, 'data.json');
-const REFRESH_CRON = process.env.REFRESH_CRON || '*/60 * * * *';
+const REFRESH_CRON = process.env.REFRESH_CRON || '*/20 * * * *';
 const AUTO_REFRESH_ON_START = process.env.AUTO_REFRESH_ON_START !== 'false';
 const AUTO_REFRESH_ENABLED =
     process.env.AUTO_REFRESH_ENABLED !== 'false';
@@ -106,7 +106,7 @@ function writeCacheToFile(cacheData) {
                 fs.mkdirSync(path.dirname(DATA_FILE_PATH), {
             recursive: true,
         });
-        
+
         fs.writeFileSync(
             tempFilePath,
             JSON.stringify(cacheData, null, 2),
